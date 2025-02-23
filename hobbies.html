@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div class="h1_container">
+        <h2 id="text"> VMR </h2>
+    </div>
+
+    <div class="containers">
+        <h2 class="text">Coding </h2>
+    </div>
+
+    <div class="container">
+
+        <video id="video_player" controls>
+            <source src="coding.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="containers">
+        <h2 class="text"> Gaming</h2>
+    </div>
+
+    <div class="container">
+        <video id="video_player_1" controls>
+            <source src="csgo.mp4" type="video/mp4">
+
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <script>
+        const video_player = document.getElementById("video_player");
+        const video_player_1 = document.getElementById("video_player_1");
+        const text = document.getElementById("text");
+
+
+        video_player.addEventListener('play', function () {
+            if (!video_player_1.paused) {
+                video_player_1.pause();
+                video_player_1.currentTime = 0;
+            }
+        });
+
+        video_player_1.addEventListener('play', function () {
+            if (!video_player.paused) {
+                video_player.pause();
+                video_player.currentTime = 0;
+            }
+        });
+
+
+        text.addEventListener("click", () => {
+
+            window.location.href = "profile.html"
+        })
+
+
+
+
+
+    </script>
+
+    <style>
+
+        .text {
+            color: rgb(211 151 239);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #text {
+            color: rgb(211 151 239);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 500px;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        #video_player, #video_player_1 {
+            width: 500px;
+            height: 250px;
+            border-radius: 15px;
+            border: 5px solid #ddd;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+        }
+
+        .containers {
+            width: 500px;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <div class="h1_container">
+        <h2 id="text"> VMR </h2>
+    </div>
+
+    <div class="containers">
+        <h2 class="text">Tambay sa court </h2>
+    </div>
+
+    <div class="container">
+        <img class="image" src="court.jpg" alt="Description of image">
+
+    </div>
+    <div class="containers">
+        <h2 class="text"> Tamang lakad lang!</h2>
+    </div>
+
+    <div class="container">
+        <img class="image" src="walk.jpg" alt="Description of image">
+
+    </div>
+
+    <div class="containers">
+        <h2 class="text"> Classmate  kong malulupet !</h2>
+    </div>
+
+    <div class="container">
+        <img class="image" src="classmate.jpg" alt="Description of image">
+
+    </div>
+
+
+    <script>
+
+        const text = document.getElementById("text");
+
+
+
+
+        text.addEventListener("click", () => {
+
+            window.location.href = "profile.html"
+        })
+
+
+
+
+
+    </script>
+
+    <style>
+
+        .text {
+            color: rgb(211 151 239);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #text {
+            color: rgb(211 151 239);
+            text-align: center;
+            cursor: pointer;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .container {
+            width: 500px;
+            height: 250px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .image {
+            width: 500px;
+            height: 250px;
+            border-radius: 15px;
+            border: 5px solid #ddd;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+        }
+
+        .containers {
+            width: 500px;
+            height: 50px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+    </style>
+</body>
+</html>

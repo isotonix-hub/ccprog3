@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login_container">
+        <h1 id="h1">Login</h1>
+        <input class="input" type="text" id="username" placeholder="Email or phone number" />
+        <br />
+        <div class="password-container">
+            <input class="input" type="password" id="password" placeholder="Password" />
+            <span class="toggle-password" id="close_lock">🔒</span>      
+        </div>
+        <br />
+        <button type="button" id="enter">Enter</button>
+    </div>
+
+    <script src="index.js"></script>
+
+
+    <style>
+        body {
+            background-image: url('Linux-logo.jpg');
+            background-size: cover;
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+
+        .login_container {
+            text-align: center;
+        }
+
+        .input {
+            height: 20px;
+            width: 175px;
+            margin: 5px;
+            padding: 2px;
+            font-family: Arial, sans-serif;
+            font-style: normal;
+            border-radius: 20px;
+        }
+
+        .password-container {
+            position: relative;
+            display: inline-block;
+        }
+
+            .password-container input {
+                padding-right: 5px; 
+            }
+
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        #enter:hover {
+            background-color: whitesmoke;
+            border-radius: 20px;
+        }
+    </style>
+
+</body>
+</html>

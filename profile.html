@@ -1,0 +1,192 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+
+
+
+
+
+
+
+    <div class="log_out">
+        <button type="button" id="log_out">  Log out </button>
+    </div>
+
+
+    <div class="container">
+
+
+        <div class="profile_picture">
+
+            <img id="profile_picture" alt="User Picture">
+
+        </div>
+        <div class="full_name">
+            <h1 id="full_name">  </h1>
+        </div>
+    </div>
+
+
+
+
+    <div class="parent-container">
+
+        <div id="first" class="containers">
+            <div class="all_pictures">
+                <img id="about_me" alt="User Picture">
+            </div>
+        </div>
+
+        <div id="second" class="containers">
+            <div class="all_pictures">
+                <img id="hobbies" alt="User Picture">
+            </div>
+        </div>
+
+        <div id="third"  class="containers">
+            <div class="all_pictures">
+                <img id="random_picture" alt="User Picture">
+            </div>
+        </div>
+
+
+
+
+        <div id="fourth" class="containers">
+            <div class="all_pictures">
+                <img id="random_video" alt="User Picture">
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="profile.js">
+
+
+
+
+    </script>
+
+
+
+
+
+    <style>
+
+
+
+
+
+        #full_name {
+           color: rgb(211 151 239);
+        }
+       .log_out{
+           text-align:center;
+       }
+        #log_out {
+            width: 75px;
+            text-align: center;
+            border-radius: 20px;
+            border-style: solid;
+            box-shadow: 0 4px 5px rgb(211 151 239);
+            cursor: pointer;
+            font-style:normal;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+      
+        
+
+     
+
+        body {
+            background-color: black;
+        }
+
+        #profile_picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid #ddd;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+        }
+
+        .profile_picture, .full_name {
+            text-align: center;
+            overflow: hidden;
+        }
+
+
+
+
+        .container {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .containers {
+            width: 350px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+            padding: 10px;
+            text-align: center;
+        }
+
+        #about_me, #hobbies, #random_video, #random_picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #ddd;
+            object-fit: cover;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 10px rgb(211 151 239);
+        }
+
+        .parent-container {
+            display: flex;
+            gap: 20px; 
+        }
+
+        .containers {
+            width: 25%; 
+        }
+
+            #about_me, #hobbies, #random_video, #random_picture, .containers:hover {
+                box-shadow: 0 10px 10px rgb(211 151 239);
+                cursor:pointer;               
+            }
+
+    </style>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
